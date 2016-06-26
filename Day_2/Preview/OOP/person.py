@@ -7,7 +7,7 @@
 """
 
 
-class person:
+class Person:
     # 相当与构造函数
     def __init__(self, name, age, pay=0, job=None):
         self.name = name;
@@ -25,7 +25,7 @@ class person:
 
     # 格式化输出 理解不了
     def __str__(self):
-        return '<%s => %s>' % (self.__class__.__name__, self.name);
+        return '<%s => %s : %s : %s>' % (self.__class__.__name__, self.name, self.job, self.pay);
 
 
 if __name__ == "__main__":

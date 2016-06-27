@@ -6,7 +6,13 @@
 对于print(key,file=dbfie),也可以使用dbfile.write(key+'\n');
 """
 
-dbfilename = "people-file";
+from Day_2.DataFiles.DataFilePath import DataFilePath
+
+people_file_path = DataFilePath();
+dbfilename = people_file_path.READ_PEOPLE_FILE_PATH();
+
+
+# dbfilename="people-file";
 ENDDB = 'enddb.';
 ENDREC = 'endrc.';
 RECSEP = '=>';
@@ -16,11 +22,11 @@ def storeDbase(db, dbfilename=dbfilename):
     "将数据库文件保存为普通文件"
     dbfile = open(dbfilename, 'w');
     for key in db:
-        print (key, file = dbfile);
+        print(key, file=dbfile);
         for (name, value) in db[key].items():
-            print (name + RECSEP + repr(value), file = dbfile);
-        print (ENDREC, file = dbfile);
-    print (ENDDB, file = dbfile);
+            print(name + RECSEP + repr(value), file=dbfile);
+        print(ENDREC, file=dbfile);
+    print(ENDDB, file=dbfile);
     dbfile.close();
 
 
@@ -45,4 +51,5 @@ def loadDbase(dbfilename=dbfilename):
 
 if __name__ == '__main__':
     from initdata import db;
+
     storeDbase(db)

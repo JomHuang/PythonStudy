@@ -39,7 +39,7 @@ if __name__ == "__main__":
     bob = Person('Bob Smith', 42);
     sue = Person('Sue Jones', 47, 40000, 'dev');
     tom = Manager('Tom Done', 50, 50000);
-    print (sue, sue.pay, sue.lastName());
+    print(sue, sue.pay, sue.lastName());
     for obj in (bob, sue, tom):
         obj.giveRaise(0.1);
-        print (obj);
+        print(obj);

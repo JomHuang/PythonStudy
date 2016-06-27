@@ -1,14 +1,18 @@
-#更新shelve中记录
+# 更新shelve中记录
 
 from initdata import tom;
 import shelve;
+from Day_2.DataFiles.DataFilePath import DataFilePath
 
-db=shelve.open('people-shelve');
-sue=db['sue'];
+people_file_path = DataFilePath();
+dbfilename = people_file_path.READ_PEOPLE_SHELVE_PATH();
 
-sue['pay']+=1000;
-db['sue']=sue;
+db = shelve.open(dbfilename);
+sue = db['sue'];
 
-db['tom']=tom;
+sue['pay'] += 1000;
+db['sue'] = sue;
 
-db.close()
+db['tom'] = tom;
+
+db.close();

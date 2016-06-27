@@ -3,8 +3,11 @@
 """
 
 import shelve;
+from Day_2.DataFiles.DataFilePath import DataFilePath;
 
-db=shelve.open('class-shelve');
+people_file_path = DataFilePath();
+
+db=shelve.open(people_file_path.CLASS_SHELVE_PATH);
 
 bob=db['bob'];
 #给BOB加薪0.25

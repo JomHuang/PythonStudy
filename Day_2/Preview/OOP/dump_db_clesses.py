@@ -4,8 +4,12 @@
 """
 
 import shelve;
+from Day_2.DataFiles.DataFilePath import DataFilePath;
 
-db = shelve.open('class-shelve');
+people_file_path = DataFilePath();
+
+
+db = shelve.open(people_file_path.CLASS_SHELVE_PATH);
 for key in db:
     print (key, '=>', db[key]);
 

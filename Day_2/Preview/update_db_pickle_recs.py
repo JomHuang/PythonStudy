@@ -3,13 +3,16 @@
 """
 
 import pickle;
+from Day_2.DataFiles.DataFilePath import DataFilePath
 
-dbfile=open('sue.pkl','rb');
-db=pickle.load(dbfile);
+people_file_path = DataFilePath();
+
+dbfile = open(people_file_path.READ_PEOPLE_PICKLE_RECS_PATH('sue.pkl'), 'rb');
+db = pickle.load(dbfile);
 dbfile.close();
 
-db['pay']*=1.3
+db['pay'] *= 1.3
 
-dbfile=open('sue.pkl','wb');
-pickle.dump(db,dbfile);
+dbfile = open(people_file_path.READ_PEOPLE_PICKLE_RECS_PATH('sue.pkl'), 'wb');
+pickle.dump(db, dbfile);
 dbfile.close();

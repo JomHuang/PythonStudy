@@ -1,1 +1,3 @@
-/Day_2/DataFiles/!*.py
+Day_2/DataFiles/
+!Day_2/DataFiles/*.py
+

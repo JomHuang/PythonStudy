@@ -1,3 +1,8 @@
 Day_2/DataFiles/
 !Day_2/DataFiles/*.py
+*.\DataFiles\people-file
 
+*.\DataFiles\people-pickle
+
+Day_2/__pycache__/
+env/include/

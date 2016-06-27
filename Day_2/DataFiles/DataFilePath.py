@@ -2,11 +2,11 @@
 相关数据文件存储路径
 """
 
-FILE_PATH = "..\DataFiles\\";
-PEOPLE_FILE_PATH = "..\DataFiles\people-file";
-PEOPLE_PICKLE_PATH = "..\DataFiles\people-pickle";
-PEOPLE_SHELVE_PATH = "..\DataFiles\people-shelve";
-CLASS_SHELVE_PATH="..\..\DataFiles\class-shelve";
+FILE_PATH = "../DataFiles/";
+PEOPLE_FILE_PATH = "../DataFiles/people-file";
+PEOPLE_PICKLE_PATH = "../DataFiles/people-pickle";
+PEOPLE_SHELVE_PATH = "../DataFiles/people-shelve";
+CLASS_SHELVE_PATH="../../DataFiles/class-shelve";
 
 class DataFilePath:
     def __init__(self):

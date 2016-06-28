@@ -6,7 +6,8 @@ FILE_PATH = "../DataFiles/";
 PEOPLE_FILE_PATH = "../DataFiles/people-file";
 PEOPLE_PICKLE_PATH = "../DataFiles/people-pickle";
 PEOPLE_SHELVE_PATH = "../DataFiles/people-shelve";
-CLASS_SHELVE_PATH="../../DataFiles/class-shelve";
+CLASS_SHELVE_PATH = "../../DataFiles/class-shelve";
+
 
 class DataFilePath:
     def __init__(self):
@@ -14,7 +15,7 @@ class DataFilePath:
         self.PEOPLE_FILE_PATH = PEOPLE_FILE_PATH;
         self.PEOPLE_PICKLE_PATH = PEOPLE_PICKLE_PATH;
         self.PEOPLE_SHELVE_PATH = PEOPLE_SHELVE_PATH;
-        self.CLASS_SHELVE_PATH=CLASS_SHELVE_PATH;
+        self.CLASS_SHELVE_PATH = CLASS_SHELVE_PATH;
 
     def READ_FILE_PATH(self):
         return self.FILE_PATH;
@@ -30,4 +31,3 @@ class DataFilePath:
 
     def READ_PEOPLE_SHELVE_PATH(self):
         return self.PEOPLE_SHELVE_PATH;
-

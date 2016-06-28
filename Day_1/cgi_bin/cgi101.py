@@ -1,11 +1,11 @@
-#!/Library/Frameworks/Python.framework/Versions/3.5/bin/python3.5
+#!C:\Users\Administrator\AppData\Local\Programs\Python
 import cgi;
 
 form = cgi.FieldStorage();
-print ('Content-type:text/html\n');
-print ('<title>reply page</title>');
+print('Content-type:text/html\n');
+print('<title>reply page</title>');
 
 if not 'user' in form:
-    print (' <h1>who are you?</h1>');
+    print(' <h1>who are you?</h1>');
 else:
-    print ('<h1>hello <i>%s</i></h1>' % cgi.escape(form['user'].value));
+    print('<h1>hello <i>%s</i></h1>' % cgi.escape(form['user'].value));

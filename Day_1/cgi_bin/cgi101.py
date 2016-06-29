@@ -1,4 +1,4 @@
-#!C:\Users\Administrator\AppData\Local\Programs\Python
+
 import cgi;
 
 form = cgi.FieldStorage();
